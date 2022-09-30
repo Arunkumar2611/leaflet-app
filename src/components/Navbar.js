@@ -5,7 +5,7 @@ const Navbar = () => (
   <nav>
     <section>
       <Link to="/">Home</Link>
-      <Link to="/dataset">Dataset</Link>
+      <Link to="/mapview">Map View</Link>
       <Link to="/tableview">Table View</Link>
     </section>
   </nav>
