@@ -1,6 +1,8 @@
-// import { combineReducers } from "redux";
-// import actionReducer from "./actionReducer";
+import { combineReducers } from "redux";
+import volcano from "./actionReducer";
 
-// export default combineReducers({
-//     actionReducer
-// })
+const rootReducer = combineReducers({
+    volcano
+});
+
+export default rootReducer;

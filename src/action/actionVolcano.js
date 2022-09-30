@@ -1,13 +1,22 @@
 // import * as api from '../api'
-// import { VOLCANODATA } from "../constant/constant";
+import { VOLCANODATA, VOLCANOERROR, VOLCANOLOADING } from "../constant/constant";
 
-// export const getValcono = (data) => async (dispatch) => {
-//     try {
-//         const { data } = await api.fetchPosts(page);
-
-//         dispatch({ type: VOLCANODATA, payload: data });
-
-//     } catch (error) {
-//         console.log(error.message);
-//     }
-// };
+export function fetchData() {
+    return dispatch => {
+      dispatch({ type: VOLCANOLOADING });
+      return fetch("https://gist.githubusercontent.com/arfbramboll/259078f1a1ac6b79619cc49a3c120dea/raw/8a3b6c2a081b3e89b446d9d52678e6112f6f43dc/volcanoes.json")
+        .then(response => response.json())
+        .then(todos => {
+          dispatch({
+            type: VOLCANODATA,
+            todos: todos.features
+          });
+        })
+        .catch(error => {
+          dispatch({
+            type: VOLCANOERROR,
+            error
+          });
+        });
+    };
+  }

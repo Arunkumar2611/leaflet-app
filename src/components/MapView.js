@@ -1,6 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import axios from 'axios'
-import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 const MapView = () => {
   const position = [20.5937, 78.9629]
