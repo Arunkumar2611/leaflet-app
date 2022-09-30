@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import MapView from './components/MapView';
 import TableView from './components/TableView';
+import Todos from './components/RandomData';
 
 function App() {
   return (

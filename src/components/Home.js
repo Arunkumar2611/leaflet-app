@@ -1,10 +1,11 @@
 import React from 'react'
-import TableView from './TableView'
+import Todos from './RandomData'
 
 const Home = () => {
   return (
     <>
     <div>Home</div>
+    <Todos />
     </>
   )
 }
