@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Dataset from './components/Dataset';
+import MapView from './components/MapView';
 import TableView from './components/TableView';
 
 function App() {
@@ -17,11 +17,12 @@ function App() {
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/dataset" element={<Dataset />} />
+      <Route path="/mapview" element={<MapView />} />
       <Route path="/tableview" element={<TableView />} />
   
     </Routes>
   </BrowserRouter>
+  // <Dataset />
   )
 }
 
