@@ -13,7 +13,7 @@ const volcano = (state = initialState, action) => {
       case VOLCANODATA:
         return {
           ...state,
-          data: action.todos,
+          data: action.data,
           loading: false
         };
       case VOLCANOERROR:
