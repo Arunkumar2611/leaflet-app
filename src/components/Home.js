@@ -1,11 +1,10 @@
 import React from 'react'
-import Todos from './RandomData'
+import '../App.css';
 
 const Home = () => {
   return (
     <>
-    <div>Home</div>
-    <Todos />
+      <h1 className='App'>React Leaflet using Volcano data</h1>
     </>
   )
 }

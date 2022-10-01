@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { connect } from "react-redux";
 import { fetchData } from "../action/actionVolcano";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup, LayersControl } from 'react-leaflet'
+import ReactLeafletGoogleLayer from 'react-leaflet-google-layer';
 
 const MapView = (props) => {
   const position = [20.5937, 78.9629]
@@ -23,6 +24,18 @@ const MapView = (props) => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+      <LayersControl position='topright'>
+        <LayersControl.BaseLayer name='Satellite view'>
+          <ReactLeafletGoogleLayer type={'satellite'} />
+        </LayersControl.BaseLayer>
+
+        <LayersControl.BaseLayer name='Tile view'>
+          <TileLayer
+            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+          />
+        </LayersControl.BaseLayer>
+      </LayersControl>
       {
         items.map((row) =>
           <Marker
