@@ -14,10 +14,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 Plot the volcano dataset on the map
 Add layer controls to the map
 
-![Uploading ss1.png…]()
-![ss2](https://user-images.githubusercontent.com/56310665/193411312-8ac28d5b-ebf5-4d5b-909e-3b520523c389.png)
+## Map view
+![ss1](https://user-images.githubusercontent.com/56310665/193411409-e730f308-aa31-4782-a8cf-9dcbb0e24938.png)
+
 
 Navbar have 3 routes
 * Home
 * Map view
 * Table view
+
+## Table view
+![ss2](https://user-images.githubusercontent.com/56310665/193411312-8ac28d5b-ebf5-4d5b-909e-3b520523c389.png)
+
