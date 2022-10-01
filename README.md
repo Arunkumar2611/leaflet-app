@@ -29,3 +29,9 @@ Navbar have 3 routes
 ## Table view
 ![ss2](https://user-images.githubusercontent.com/56310665/193411312-8ac28d5b-ebf5-4d5b-909e-3b520523c389.png)
 
+## Libraries used
+* leaflet
+* react-leaflet
+* react-leaflet-google-layer
+* react-redux
+* react-router-dom
