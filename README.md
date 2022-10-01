@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Clone the repository by clicking [https://github.com/Arunkumar2611/leaflet-app.git](https://github.com/Arunkumar2611/leaflet-app.git)
+
+### `npm install`
+
 ### `npm start`
 
 Runs the app in the development mode.\
