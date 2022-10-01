@@ -15,6 +15,9 @@ Plot the volcano dataset on the map
 Add layer controls to the map
 
 ## Map view
+
+![image](https://user-images.githubusercontent.com/56310665/193411554-7de76104-cd47-4ffc-8574-c8ef1115a62c.png)
+
 ![ss1](https://user-images.githubusercontent.com/56310665/193411409-e730f308-aa31-4782-a8cf-9dcbb0e24938.png)
 
 
