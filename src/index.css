@@ -15,7 +15,7 @@ code {
 
 nav {
   display: flex;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   background: #111;
 }
 
@@ -43,7 +43,6 @@ a {
 }
 
 section {
-  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
